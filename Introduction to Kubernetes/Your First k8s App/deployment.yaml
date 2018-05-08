@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: tomcat
-  replicas: 1
+  replicas: 4
   template:
     metadata:
       labels:
@@ -17,4 +17,3 @@ spec:
         image: tomcat:9.0
         ports:
         - containerPort: 8080
-        
